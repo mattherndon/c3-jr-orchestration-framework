@@ -1,13 +1,21 @@
 # C3 Jr. AI Orchestration Framework
-### Strategic Direction & Institutional Architecture
-
-![System Architecture Diagram](assets/system-diagram.png)
+**Strategic Direction & Institutional Architecture**
 
 ---
 
-**Project Role:** Architectural Director & Strategic Design Lead
-**Stack:** AWS (Bedrock/Lambda/Step Functions), Figma (Design System), Agentic AI
-**Institutional Impact:** 50% Reduction in OpEx // 30% Increase in Velocity
+**Project Role:** Architectural Director & Strategic Design Lead  
+**Stack:** AWS (Bedrock / Lambda / Step Functions), Figma (Design System), Agentic AI  
+**Institutional Impact:** 50% Reduction in OpEx · 30% Increase in Velocity
+
+---
+
+## Overview
+
+This repository contains the architectural blueprints and governance frameworks for C3 Jr. — an agentic AI coding mentor designed for the Mississippi Children's Museum.
+
+The project required bridging two teams that couldn't communicate across disciplines: a creative team with a clear educational vision and no technical language to express it, and an engineering team with capable AWS infrastructure and no behavioral direction to build against. This framework is what filled that gap.
+
+As Architectural Director, I didn't write the Lambda functions or configure Bedrock. I defined what the AI should decide, why, and under what constraints — in terms both educators and engineers could act on.
 
 ---
 
@@ -15,24 +23,35 @@
 
 | Document | Description |
 |---|---|
-| [📋 Governance Laws](governance/PROMPT_LAWS.md) | AI behavioral constraints & linguistic guardrails |
-| [⚙️ System Logic](architecture/SYSTEM_LOGIC.md) | Agentic behavior trees & AWS orchestration strategy |
-| [🎨 DesignOps Specs](design-ops/HANDOFF_SPECS.md) | Figma-to-AWS design token bridge & handoff protocols |
+| 📋 Governance Framework | AI behavioral constraints and linguistic guardrails |
+| ⚙️ System Logic | Agentic behavior trees and AWS orchestration strategy |
+| 🎨 DesignOps Specs | Figma-to-AWS design token bridge and handoff protocols |
 
 ---
 
-## Executive Summary
-This repository contains the architectural blueprints and governance frameworks for **C3 Jr.**, an agentic AI mentor designed for the Mississippi Children's Museum. As the Architectural Director, I bridged the gap between institutional intent and technical execution, directing the "Blueprints" that governed the engineering build on AWS.
+## Architectural Principles
 
-## The Architectural Vision
-In an institutional setting, AI cannot be a "black box." It must be a governed asset. This framework ensures that:
-1. **Pedagogy is Hard-Coded:** The AI follows socratic teaching methods, not just answering questions.
-2. **The Realm is Secure:** Multi-layered guardrails protect young citizens (users) from uncurated AI behavior.
-3. **The System Scales:** AWS-backed serverless architecture decouples growth from human headcount.
+Three principles governed every decision in this framework:
+
+**1. Pedagogy is embedded, not bolted on.**  
+The AI follows Socratic teaching methods — asking before telling, encouraging before correcting. This isn't a content filter. It's a behavioral architecture.
+
+**2. Safety is structural.**  
+Multi-layered guardrails ensure the AI stays within its educational mandate. For a children's institution, this isn't optional — it's the baseline the rest of the system is built on.
+
+**3. Scale is decoupled from headcount.**  
+The AWS serverless architecture means the system can serve more children without requiring proportionally more human facilitation. The governance framework makes that scale safe.
+
+---
 
 ## DesignOps: The Figma-to-AWS Bridge
-I implemented **Figma** as the central source of truth for the "Royal Engineers" (Developers). By establishing a federated design system within Figma, I ensured that every component on AWS met the museum's strict standards for brand integrity and WCAG 2.2 accessibility.
+
+Figma served as the central source of truth for the engineering team — not just for visual design, but as the governance document for behavioral logic. Every component was annotated with the reasoning behind it, not just the specification, so developers could make decisions aligned with educational intent without requiring constant design oversight.
+
+The design token system established here wasn't primarily visual. It was a communication protocol between disciplines.
+
+All components meet WCAG 2.2 AA accessibility standards — built in from the start, not remediated at the end.
 
 ---
 
-*Note: This repository serves as a portfolio of Architectural Direction and Strategic Leadership. Proprietary museum code has been abstracted to focus on the Governance Framework.*
+*This repository documents architectural direction and governance strategy. Proprietary museum implementation details have been abstracted to focus on the transferable framework.*
